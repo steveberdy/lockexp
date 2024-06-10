@@ -6,7 +6,8 @@ The code in this repository is made to exploit the content delivery system used 
 
 ```
 NOTE:
-I reported this to Microsoft security back in January 2024. They didn't think it was serious, so now I'm releasing my repro code publicly.
+I reported this to Microsoft security back in January 2024.
+They didn't think it was serious, so now the repro code is public.
 ```
 
 To get started, download the zip-file from releases and run `lockexp` in your command-line terminal.
