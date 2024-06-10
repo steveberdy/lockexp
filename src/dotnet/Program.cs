@@ -42,7 +42,10 @@ static void Run(string title, string description, string buttonText, Uri buttonU
         }
         File.WriteAllText(file, JsonSerializer.Serialize(lockscreenInfo, LockScreenJsonContext.Default.LockScreenInfo));
         Console.WriteLine("Finished. Lock your desktop to go to the lock screen");
+        return;
     }
+
+    Console.WriteLine("Couldn't find target. Make sure you have enabled \"Get fun facts, tips, and more...\" in your lock screen settings");
 }
 
 var root = new RootCommand("Override lock screen content")
